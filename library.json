@@ -3,19 +3,19 @@
   "version": "1.8",
   "description": "Fast IIR filter library for embedded systems",
   "keywords": "filter, iir, dsp",
-  "exclude": [
-    "demo",
-    "test",
-    "examples",
-    "cmake",
-    "python",
-    "matlab"
-  ],
   "authors": [
     {
       "name": "Bernd Porr"
     }
   ],
   "frameworks": "*",
-  "platforms": "*"
+  "platforms": "*",
+  "build": {
+    "srcFilter": [
+      "+<*>",          
+      "-<demo/>",
+      "-<test/>",
+      "-<docs/>"
+    ]
+  }
 }
